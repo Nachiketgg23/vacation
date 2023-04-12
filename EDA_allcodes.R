@@ -1,4 +1,5 @@
-#LINEAR REGRESSION
+#LINEAR REGRESSION (S)
+#data: continuous data
 
 rm(list=ls()) 	
 library(readr)
@@ -80,7 +81,8 @@ sum((resid(mod))^2)
 plot(resid(mod))
 
 
-#LOGISTIC REGRESSION
+#LOGISTIC REGRESSION(S)
+#data: binary data
 rm(list=ls()) 	
 library(readr)
 data <- read_csv("/Users/nachiketgg/Documents/datasets/lab5/iris23.csv")
@@ -101,27 +103,8 @@ pre
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #ANOVA
-
+#data: continuous data
 
 #Pre-processing the data-set
 data <- read.csv("Anova_Dataset.csv", header = TRUE)
@@ -179,7 +162,8 @@ hist(processed_data$yield)
 #Conclusion: We found a statistically-significant difference in average crop yield by both fertilizer type (F(2)=9.018, p < 0.001) and by planting density (F(1)=15.316, p < 0.001).***
 
 
-#SVM
+#SVM (s)
+#Data: linear/non linear
 install.packages("caTools")
 library(caTools)
 library(e1071)
@@ -279,7 +263,7 @@ f1
 
 
 
-#DECISION TREE
+#DECISION TREE (s)
 
 install.packages("corrplot")
 library(corrplot)
